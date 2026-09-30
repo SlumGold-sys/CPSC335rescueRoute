@@ -1,83 +1,83 @@
 [
   {
     "donation_id": "D-1001",
-    "donor name": "Campus Catering",
-    "food type": "prepared meals",
+    "donor_name": "Campus Catering",
+    "food_type": "prepared meals",
     "quantity": 40,
     "expiry": 120,
-    "pickup area": "Downtown",
-    "ready time": 480
+    "pickup_area": "Downtown",
+    "ready_time": 480
   },
   {
     "donation_id": "D-1002",
-    "donor name": "Fresh Mart",
-    "food type": "produce",
+    "donor_name": "Fresh Mart",
+    "food_type": "produce",
     "quantity": 20,
     "expiry": 90,
-    "pickup area": "North Campus",
-    "ready time": 500
+    "pickup_area": "North Campus",
+    "ready_time": 500
   },
   {
     "donation_id": "D-1002",
-    "donor name": "Duplicate Mart",
-    "food type": "produce",
+    "donor_name": "Duplicate Mart",
+    "food_type": "produce",
     "quantity": 20,
     "expiry": 90,
-    "pickup area": "North Campus",
-    "ready time": 500
+    "pickup_area": "North Campus",
+    "ready_time": 500
   },
   {
     "donation_id": "D-1004",
-    "donor name": "Expired Eats",
-    "food type": "dairy",
+    "donor_name": "Expired Eats",
+    "food_type": "dairy",
     "quantity": 30,
     "expiry": -10,
-    "pickup area": "Downtown",
-    "ready time": 480
+    "pickup_area": "Downtown",
+    "ready_time": 480
   },
   {
     "donation_id": "D-1005",
-    "donor name": "Seafood Co",
-    "food type": "raw oysters",
+    "donor_name": "Seafood Co",
+    "food_type": "raw oysters",
     "quantity": 15,
     "expiry": 100,
-    "pickup area": "Downtown",
-    "ready time": 540
+    "pickup_area": "Downtown",
+    "ready_time": 540
   },
   {
     "donation_id": "D-1006",
-    "donor name": "Massive Farm",
-    "food type": "produce",
+    "donor_name": "Massive Farm",
+    "food_type": "produce",
     "quantity": 5000,
     "expiry": 200,
-    "pickup area": "North Campus",
-    "ready time": 600
+    "pickup_area": "North Campus",
+    "ready_time": 600
   },
   {
     "donation_id": "D-1007",
-    "donor name": "Big Bakery",
-    "food type": "prepared meals",
+    "donor_name": "Big Bakery",
+    "food_type": "prepared meals",
     "quantity": 400,
     "expiry": 150,
-    "pickup area": "Downtown",
-    "ready time": 600
+    "pickup_area": "Downtown",
+    "ready_time": 600
   },
   {
     "donation_id": "D-1008",
-    "donor name": "Local Farm",
-    "food type": "produce",
+    "donor_name": "Local Farm",
+    "food_type": "produce",
     "quantity": 40,
     "expiry": 60,
-    "pickup area": "North Campus",
-    "ready time": 540
+    "pickup_area": "North Campus",
+    "ready_time": 540
   },
   {
     "donation_id": "D-1009",
-    "donor name": "Campus Bakery",
-    "food type": "bakery",
+    "donor_name": "Campus Bakery",
+    "food_type": "bakery",
     "quantity": 30,
     "expiry": 45,
-    "pickup area": "North Campus",
-    "ready time": 540
+    "pickup_area": "North Campus",
+    "ready_time": 540
   }
 ]

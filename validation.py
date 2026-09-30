@@ -28,9 +28,13 @@ def load_and_validate_data(file_path, entity_type):
             if record_id in seen_ids:   
                 print(f"Warning: Duplicate ID {record_id} found in {file_path}. Skipping this record.")
                 continue
+# 
             if entity_type == "donation" and (not isinstance(record.get("donation_id"), str) or not record.get("donation_id").strip() ):
                             print(f"Warning: Invalid donation ID for {record_id}. Skipping this record.")
                             continue
+            if entity_type == "donation" and (not isinstance(record.get("donor_name"), str) or not record.get("donor_name").strip() ):
+                                        print(f"Warning: Invalid Donor Name for {record_id}. Skipping this record.")
+                                        continue
             if entity_type == "donation" and (not isinstance(record.get("food_type"), str) or not record.get("food_type").strip() ):
                                         print(f"Warning: Invalid Food Type for {record_id}. Skipping this record.")
                                         continue
@@ -46,12 +50,33 @@ def load_and_validate_data(file_path, entity_type):
             if entity_type == "donation" and (not isinstance(record.get("expiry"), int) or record.get("expiry") <= 0):
                 print(f"Warning: Donation is expired for {record_id}. Skipping this record.")
                 continue
+# 
+
+            
+            if entity_type == "recipient" and (not isinstance(record.get("recipient_id"), str) or not record.get("recipient_id").strip() ):
+                                        print(f"Warning: Invalid recipient ID for {record_id}. Skipping this record.")
+                                        continue
+            if entity_type == "recipient" and (not isinstance(record.get("organization_name"), str) or not record.get("recipient_id").strip() ):
+                            print(f"Warning: Invalid Organization Name for {record_id}. Skipping this record.")
+                            continue
+            # if entity_type == "recipient" and (not isinstance(record.get("accepted_food_types"), list? ) or not record.get("recipient_id").strip() ):
+            #                             print(f"Warning: Invalid Organization Name for {record_id}. Skipping this record.")
+            #                             continue
+    # "accepted_food_types": [
+    #   "prepared meals",
+    #   "produce",
+    #   "dairy"
+    # ],
+    
             if entity_type == "recipient" and (not isinstance(record.get("capacity"), int) or record.get("capacity") < 0):
                 print(f"Warning: Invalid capacity for {record_id}. Skipping this record.")
                 continue
-
-
-
+            if entity_type == "recipient" and (not isinstance(record.get("area_location"), str) or not record.get("area_location").strip()):
+                            print(f"Warning: Invalid area/location for {record_id}. Skipping this record.")
+                            continue
+            if entity_type == "recipient" and (not isinstance(record.get("closing_time"), int) or record.get("capacity") < 0):
+                print(f"Warning: Invalid Closing Time for {record_id}. Skipping this record.")
+                continue
 
 
             

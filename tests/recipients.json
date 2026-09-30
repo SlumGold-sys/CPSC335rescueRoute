@@ -1,25 +1,25 @@
 [
   {
     "recipient_id": "R-201",
-    "organization name": "Downtown Shelter",
-    "accepted food types": [
+    "organization_name": "Downtown Shelter",
+    "accepted_food_types": [
       "prepared meals",
       "produce",
       "dairy"
     ],
     "capacity": 500,
-    "area/location": "Downtown",
-    "closing time": 1200
+    "area_location": "Downtown",
+    "closing_time": 1200
   },
   {
     "recipient_id": "R-202",
-    "organization name": "North Campus Pantry",
-    "accepted food types": [
+    "organization_name": "North Campus Pantry",
+    "accepted_food_types": [
       "produce",
       "bakery"
     ],
     "capacity": 50,
-    "area/location": "North Campus",
-    "closing time": 1020
+    "area_location": "North Campus",
+    "closing_time": 1020
   }
 ]
