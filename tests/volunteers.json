@@ -1,16 +1,17 @@
+
 [
   {
     "volunteer_id": "V-301",
     "vehicle_capacity": 300,
     "area_location": "Downtown",
-    "availability": 1200,
+    "availability": [480, 1200],
     "maximum_pickups": 3
   },
   {
     "volunteer_id": "V-302",
-    "vehicle_capacity": 15,
+    "vehicle_capacity": 50,
     "area_location": "North Campus",
-    "availability": 1000,
+    "availability": [480, 1000],
     "maximum_pickups": 3
   }
 ]
