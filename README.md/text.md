@@ -273,8 +273,7 @@ Current limitations include:
 - The program is not intended for real operational, emergency, or food-handling use.
 ## 14. Team Contributions
 
-### Team Member 1
--Chase Okoorian 
+### Chase Okoorian
 
 Designed and implemented the robust JSON data ingestion and validation pipeline (validation.py), 
 incorporating strict type checking for quantities, capacities, and temporal windows, automated key normalization, 
