@@ -44,6 +44,7 @@ matching.py
 fifo.py
 greedy.py
 metrics.py
+test_rescueroute.py
 
 data/
 tests/
@@ -67,8 +68,8 @@ Processes donations using the urgency-first priority rule.
 **metrics.py**  
 Calculates performance statistics and compares FIFO and Greedy.
 
----
-
+**test_rescueroute.py** 
+Tests program based on varying constraints and values
 ## 4. Input Data Model
 
 The program loads data from JSON files.
@@ -160,7 +161,6 @@ Our Greedy priority rule is:
 3. If both expiry and quantity are equal, the donation with the earlier ready time is processed first.
 4. If all previous rules are equal, the donations are processed in their original order.
 
----
 
 ## 8. Data Structures Used
 
@@ -186,23 +186,25 @@ Used by the Greedy scheduling function to sort donations according to the priori
 
 ## 9. Complexity Analysis
 
+- D = number of donations
+- R = number of recipients
+- V = number of volunteers
+Every donation has complexity O(R*V) because of matching work done between Recipient and Volunteer in matching function
+- FIFO = O(DRV)
+FIFO matches Recipient and Volunteer for every Donation
+- Greedy = O(D log D + D^2 + DRV)
+Greedy has to first sort which causes O(D log D), then it also has to match like FIFO - O(DRV),
+then it scans the orderd donation list to output an explanation for each donation wwhich add O(D^2)
+
+
+
+## 10. Metrics
+
 **In process**
 
 ---
 
-## 10. Explainable Decisions
-
-**In process**
-
---
-
-## 11. Metrics
-
-**In process**
-
----
-
-## 12. Testing and Edge Cases
+## 11. Testing and Edge Cases
 
 **In process**
 
@@ -210,19 +212,19 @@ What was tested exactly?
 
 --
 
-## 13. Fairness / Starvation Discussion
+## 12. Fairness / Starvation Discussion
 
 **In process**
 
 -
 
-## 14. Limitations
+## 13. Limitations
 
 **In process**
 
 -
 
-## 15. Team Contributions
+## 14. Team Contributions
 
 ### Team Member 1
 -
