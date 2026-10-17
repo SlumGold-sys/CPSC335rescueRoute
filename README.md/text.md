@@ -284,8 +284,10 @@ ensuring donations are processed strictly in arrival order while locally trackin
 and pickup limits without mutating original dataset fixtures.
 
 
-### Team Member 2
--
+### Brian Diaz
+Designed and implemented the donation-recipient-volunteer matching system that is our matching.py, incorporating food-type compatibility checks, recipient and vehicle capacity constraints, volunteer availability, geographic restrictions, and the maximum quantity of pickup limits to ensure reasonable donation assignments. Developed the urgency-first greedy schedule algorithm that is our greedy.py, prioritizing donations based on remaining item life, quantity, and ready time while generating human-readable explanations for assignment, rejection, and deferral decisions.
+
+Integrated the evaluation and comparison module which is our metrics.py, by calculating donations assigned and unassigned, total food rescued, food at risk, urgent rescue rates, and recipient and volunteer capacity utilization to compare FIFO and greedy scheduling strategies. Enhanced the application's main execution workflow known as our main.py, by integrating data loading, validation, FIFO and greedy scheduling, and performance metrics into a unified system that displays assignment decisions and side-by-side algorithm comparisons. Contributed with system integration, debugging, and testing to verify correct module interactions, maintain consistent resource tracking, and demonstrate differences between FIFO and greedy scheduling using simulated donation data.
 
 ### Team Member 3
 -
