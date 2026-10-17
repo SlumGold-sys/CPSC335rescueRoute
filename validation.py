@@ -77,6 +77,7 @@ def load_and_validate_data(file_path, entity_type):
             if entity_type == "recipient" and (not isinstance(record.get("closing_time"), int) or record.get("capacity") < 0):
                 print(f"Warning: Invalid Closing Time for {record_id}. Skipping this record.")
                 continue
+        
 
 
             

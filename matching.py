@@ -75,6 +75,7 @@ def check_match(donation, recipient, volunteer, *, recipient_remaining=None,
     if not _same_area(_value(donation, "pickup_area", "pickup area"),
                       _value(volunteer, "area_location", "area/location", "area")):
         return False, "Volunteer is outside the donation's pickup area (no travel model is available)."
+
     if not _volunteer_available(volunteer, when):
         return False, "Volunteer is unavailable at the scheduled pickup time."
     capacity = _value(volunteer, "vehicle_capacity", "vehicle capacity") if volunteer_remaining is None else volunteer_remaining
