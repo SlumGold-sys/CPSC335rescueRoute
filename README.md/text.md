@@ -273,16 +273,24 @@ Current limitations include:
 - The program is not intended for real operational, emergency, or food-handling use.
 ## 14. Team Contributions
 
-### Team Member 1
-Chase Okoorian- 
-- Worked on `matching.py` and `fifo.py`
-- Worked on README documentation and project report
-- Helped debug matching and test cases
-### Team Member 2
-Kevin Arias
-- Worked on 'validation.py' and 'main.py'
-- Created and ran automated tests in `test_rescueroute.py`
-- Worked on README documentation and project report
+### Chase Okoorian
+
+Designed and implemented the robust JSON data ingestion and validation pipeline (validation.py), 
+incorporating strict type checking for quantities, capacities, and temporal windows, automated key normalization, 
+and efficient duplicate ID detection using global tracking sets.
+
+Developed the sequential FIFO (First-In, First-Out) baseline scheduling logic (fifo.py), 
+ensuring donations are processed strictly in arrival order while locally tracking resource constraints, capacities, 
+and pickup limits without mutating original dataset fixtures.
+
+
+### Kevin Arias
+
+Contributed to the development of the input validation system of 'validation.py', including donation field checks, duplicate ID handling, and integration of validation results into the main application flow.  
+
+Integrated and created the automated pytest test suite, including seceral required edge cases such as duplicate IDs, expired donations, incompatible food types, capacity limits, competing donations, FIFO-versus-Greedy differences, and fairness/starvation behavior.
+
+
 
 ### Team Member 3
 - Worked on 'metrics.py'
