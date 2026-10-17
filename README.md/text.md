@@ -200,9 +200,24 @@ then it scans the orderd donation list to output an explanation for each donatio
 
 ## 10. Metrics
 
-**In process**
+RescueRoute calculates several metrics to compare the performance of FIFO and Greedy.
 
----
+The metrics include:
+
+- **Donations received** - total number of donations processed.
+- **Donations assigned** - number of donations successfully matched with a recipient and volunteer.
+- **Donations unassigned** - number of donations that could not be matched.
+- **Food quantity rescued** - total quantity from successfully assigned donations.
+- **Food quantity at risk** - total quantity from donations that were not assigned.
+- **Urgent donations received** - number of donations considered urgent.
+- **Urgent donations assigned** - number of urgent donations successfully assigned.
+- **Urgent rescue rate** - percentage of urgent donations that were successfully assigned.
+- **Recipient capacity utilization** - percentage of available recipient capacity that was used.
+- **Volunteer capacity utilization** - percentage of available volunteer vehicle capacity that was used.
+
+In the current implementation, a donation with a remaining shelf life of 90 minutes or less is considered urgent by default.
+
+These metrics allow FIFO and Greedy to be evaluated using the same starting data and help show the differences between processing donations by arrival order and processing them by urgency.
 
 ## 11. Testing and Edge Cases
 
