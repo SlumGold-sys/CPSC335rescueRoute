@@ -284,15 +284,15 @@ ensuring donations are processed strictly in arrival order while locally trackin
 and pickup limits without mutating original dataset fixtures.
 
 
+### Brian Diaz
+Designed and implemented the donation-recipient-volunteer matching system that is our matching.py, incorporating food-type compatibility checks, recipient and vehicle capacity constraints, volunteer availability, geographic restrictions, and the maximum quantity of pickup limits to ensure reasonable donation assignments. Developed the urgency-first greedy schedule algorithm that is our greedy.py, prioritizing donations based on remaining item life, quantity, and ready time while generating human-readable explanations for assignment, rejection, and deferral decisions.
+
+Integrated the evaluation and comparison module which is our metrics.py, by calculating donations assigned and unassigned, total food rescued, food at risk, urgent rescue rates, and recipient and volunteer capacity utilization to compare FIFO and greedy scheduling strategies. Enhanced the application's main execution workflow known as our main.py, by integrating data loading, validation, FIFO and greedy scheduling, and performance metrics into a unified system that displays assignment decisions and side-by-side algorithm comparisons. Contributed with system integration, debugging, and testing to verify correct module interactions, maintain consistent resource tracking, and demonstrate differences between FIFO and greedy scheduling using simulated donation data.
+
 ### Kevin Arias
 
 Contributed to the development of the input validation system of 'validation.py', including donation field checks, duplicate ID handling, and integration of validation results into the main application flow.  
 
+Assisted with the setup and organization of main.py, connecting the project modules and ensuring validated donation, recipient, and volunteer data could be processed by the scheduling algorithms.
+
 Integrated and created the automated pytest test suite, including seceral required edge cases such as duplicate IDs, expired donations, incompatible food types, capacity limits, competing donations, FIFO-versus-Greedy differences, and fairness/starvation behavior.
-
-
-
-### Team Member 3
-- Worked on 'metrics.py'
--
-- Worked on README documentation and project report
