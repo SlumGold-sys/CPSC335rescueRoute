@@ -274,10 +274,17 @@ Current limitations include:
 ## 14. Team Contributions
 
 ### Team Member 1
--
-
+Chase Okoorian- 
+- Worked on `matching.py` and `fifo.py`
+- Worked on README documentation and project report
+- Helped debug matching and test cases
 ### Team Member 2
--
+Kevin Arias
+- Worked on 'validation.py' and 'main.py'
+- Created and ran automated tests in `test_rescueroute.py`
+- Worked on README documentation and project report
 
 ### Team Member 3
+- Worked on 'metrics.py'
 -
+- Worked on README documentation and project report
