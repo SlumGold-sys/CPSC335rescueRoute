@@ -33,7 +33,27 @@ RescueRoute checks these constraints before assigning a donation.
 
 ## 2. How to Run
 
-**In process**
+Running the Comparison Simulation. 
+
+To execute the RescueRoute simulation, process the datasets, 
+and compare the FIFO baseline against the Greedy urgency-first strategy using the default test fixtures, run:
+
+Bash
+python main.py
+
+You can also specify custom input file paths or adjust the urgent shelf-life threshold (in minutes) using command-line arguments:
+
+Bash
+python main.py --donations tests/donations.json --recipients tests/recipients.json --volunteers tests/volunteers.json --urgent-threshold 90
+
+Running the Automated Test Suite
+
+To verify core behaviors, normal matching cases, and all required edge cases, run the automated test suite with verbose output:
+
+Bash
+python -m unittest test_rescueroute.py -v
+
+---
 
 
 ## 3. Project Structure / Architecture
