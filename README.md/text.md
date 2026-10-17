@@ -241,24 +241,36 @@ These metrics allow FIFO and Greedy to be evaluated using the same starting data
 
 ## 11. Testing and Edge Cases
 
-**In process**
+The project uses `pytest` to verify expected program behavior.
 
-What was tested exactly?
+The final test suite includes 10 automated tests:
 
---
+1. A normal compatible match.
+2. A duplicate donation ID.
+3. An expired donation.
+4. No compatible recipient food type.
+5. Insufficient recipient capacity.
+6. No available volunteer with enough vehicle capacity.
+7. Two donations competing for the same capacity.
+8. Empty input.
+9. A case where FIFO and Greedy produce different results.
+10. A fairness/starvation case where a donation is deferred.
+
+Each test uses assertions to check that the program produces the expected result instead of only checking whether the program runs.
 
 ## 12. Fairness / Starvation Discussion
 
-**In process**
-
--
+The Greedy strategy we have implemented may make other donations with longer shelf life delayed, due to more urgent donations arriving, FIFO would be more fair as its policy lets the donation process in the order it arrived in, regardless of size or expiration. 
 
 ## 13. Limitations
-
-**In process**
-
--
-
+RescueRoute is an educational prototype and uses simulated data.
+Current limitations include:
+- No real GPS or route planning.
+- Location matching is simplified to predefined areas.
+- Donations are not split between multiple recipients.
+- Volunteer availability and pickup times are simplified.
+- The system does not perform real food-safety verification.
+- The program is not intended for real operational, emergency, or food-handling use.
 ## 14. Team Contributions
 
 ### Team Member 1
