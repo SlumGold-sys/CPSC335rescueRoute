@@ -274,7 +274,16 @@ Current limitations include:
 ## 14. Team Contributions
 
 ### Team Member 1
--
+-Chase Okoorian 
+
+Designed and implemented the robust JSON data ingestion and validation pipeline (validation.py), 
+incorporating strict type checking for quantities, capacities, and temporal windows, automated key normalization, 
+and efficient duplicate ID detection using global tracking sets.
+
+Developed the sequential FIFO (First-In, First-Out) baseline scheduling logic (fifo.py), 
+ensuring donations are processed strictly in arrival order while locally tracking resource constraints, capacities, 
+and pickup limits without mutating original dataset fixtures.
+
 
 ### Team Member 2
 -
